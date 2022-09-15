@@ -1,5 +1,5 @@
-import logo from './logo.svg';
 import Row from './Row.js';
+import Banner from './Banner.js';
 import './App.css';
 import requests from './Requests';
 
@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       {/*Navbar */}
       {/*Banner*/}
-      
+      <Banner/>
       <Row 
         title="Popular" 
         fetchUrl={requests.fetchPopular}

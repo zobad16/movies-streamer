@@ -16,12 +16,12 @@ function Row({title, fetchUrl,isLargeRow}) {
         async function fetchData(){
             const request = await axios.get(fetchUrl);
             setMovies(request.data.results);
-            console.log(request);
+            //console.log(request);
             return request;
         }
         fetchData();
     }, [fetchUrl]);
-    console.table(movies);
+    //console.table(movies);
 
   return (
     <div className="row">
